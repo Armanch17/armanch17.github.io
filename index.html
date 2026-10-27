@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Арман, разработчик расширений Chrome для продавцов маркетплейсов</title>
+<meta name="description" content="Я делаю расширения для Google Chrome, которые берут на себя ручную работу продавца маркетплейса с большим ассортиментом: цены по индексу и сборку заказов FBS. Моё расширение уже работает в магазине на 870 товаров.">
+<link rel="canonical" href="https://armanch17.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://armanch17.github.io/">
+<meta property="og:title" content="Арман, разработчик расширений Chrome для продавцов маркетплейсов">
+<meta property="og:description" content="Я делаю расширения для Google Chrome, которые берут на себя ручную работу продавца маркетплейса с большим ассортиментом: цены по индексу и сборку заказов FBS. Моё расширение уже работает в магазине на 870 товаров.">
+<meta property="og:image" content="https://armanch17.github.io/images/cover.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Арман, разработчик расширений Chrome для продавцов маркетплейсов">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+
+<header class="hero">
+  <h1>Арман, разработчик расширений Chrome для продавцов маркетплейсов</h1>
+  <p class="lead">Я делаю расширения для Google Chrome, которые берут на себя ручную работу продавца маркетплейса с большим ассортиментом: цены по индексу и сборку заказов FBS. Моё расширение уже работает в магазине на 870 товаров.</p>
+  <p class="actions">
+    <a class="button" href="https://t.me/sss1737">Написать в Telegram</a>
+    <a class="mail" href="mailto:chatikyan.arman@gmail.com">chatikyan.arman@gmail.com</a>
+  </p>
+</header>
+
+<main>
+
+<section class="block" aria-labelledby="features">
+  <h2 id="features">Что делает расширение</h2>
+  <div class="body">
+    <p class="feature"><strong>Цены по индексу.</strong> Расширение проверяет все товары по расписанию, пока открыт Chrome. Если индекс цены стал невыгодным, оно снижает цену. Если цена заметно ниже, чем у конкурентов, поднимает её постепенно.</p>
+    <p class="feature"><strong>Минимальная цена.</strong> Для каждого товара вы задаёте минимальную цену в таблице Excel, ниже неё расширение цену не опустит. Товары, которые трогать не нужно, отмечаете в той же таблице.</p>
+    <p class="feature"><strong>Акции.</strong> Когда цена снижается, расширение само добавляет товар в подходящие акции маркетплейса или меняет цену в акции, где товар уже участвует.</p>
+    <p class="feature"><strong>Заказы в пути.</strong> Расширение не снижает цену товара, который уже едет к покупателю, чтобы заказ не отменили.</p>
+    <p class="feature"><strong>Два режима.</strong> Цены меняются сами или после вашего подтверждения. Во втором режиме вы видите список изменений с причинами и отмечаете, что применить.</p>
+
+    <figure class="shot">
+      <a href="images/prices-check.webp"><img src="images/prices-check.webp" width="1136" height="1878" loading="lazy" decoding="async" alt="Таблица «Ждут подтверждения»: артикул, товар, было, станет. Столбцы «Изменение», «Причина» и «Способ» размыты."></a>
+      <figcaption>Список изменений в режиме с подтверждением: вы отмечаете строки и нажимаете «Применить отмеченные». Данные на снимках условные, часть из них скрыта.</figcaption>
+    </figure>
+
+    <p class="feature"><strong>Журнал и откат.</strong> Каждое изменение записывается в журнал, его можно скачать для Excel. Последнюю проверку можно откатить одной кнопкой.</p>
+
+    <figure class="shot">
+      <a href="images/journal.webp"><img src="images/journal.webp" width="1136" height="997" loading="lazy" decoding="async" alt="Журнал изменений с кнопками «Скачать журнал для Excel» и «Откатить последние изменения». Столбец «Причина» и одна строка размыты."></a>
+      <figcaption>Журнал изменений: артикул, старая и новая цена, итог. Часть данных на снимке скрыта.</figcaption>
+    </figure>
+
+    <p class="feature"><strong>Сборка FBS.</strong> Лист подбора с фото товаров и этикетки маркетплейса печатаются в одном порядке, по артикулу. Кнопка стоит прямо в личном кабинете продавца.</p>
+
+    <div class="pair">
+      <figure class="shot shot-assembly">
+        <a href="images/assembly.webp"><img src="images/assembly.webp" width="1136" height="1355" loading="lazy" decoding="async" alt="Страница «Сборка» с кнопками «Лист подбора» и «Этикетки»: номер строки, фото, артикул, товар, количество, номер отправления и код этикетки."></a>
+        <figcaption>Страница «Сборка»: отправления «Готовы к отгрузке» по порядку артикулов. Справа крупный код с этикетки маркетплейса.</figcaption>
+      </figure>
+      <figure class="shot shot-picklist">
+        <a href="images/pick-list.webp"><img src="images/pick-list.webp" width="952" height="1347" loading="lazy" decoding="async" alt="Лист подбора: номер отправления, фото товара, название, артикул, количество и код этикетки."></a>
+        <figcaption>Лист подбора для печати. Строки идут в том же порядке, что и этикетки. Если товаров больше одного, количество напечатано на чёрной плашке.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="block" aria-labelledby="start">
+  <h2 id="start">Как начать</h2>
+  <div class="body">
+    <ol class="steps">
+      <li><p>Сначала пробная версия на 3 дня, бесплатно. Она проверяет ваши товары и показывает, что изменила бы и почему, но цены в магазине не меняет.</p></li>
+      <li><p>Если результат устроит, ставим полную версию. Первые дни она работает в режиме с подтверждением: я смотрю журнал изменений и настраиваю расширение под ваш магазин. Потом публикуем его в магазине Chrome с вашего аккаунта разработчика. В поиске магазина расширения не видно, поставить его можно только по ссылке.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="block" aria-labelledby="security">
+  <h2 id="security">Безопасность</h2>
+  <div class="body">
+    <p>Расширение работает через официальный API маркетплейса. API-ключ вы создаёте в личном кабинете продавца сами, с доступом только к товарам, акциям и заказам. Ключ хранится только в вашем браузере, зашифрованный вашим паролем, и отправляется только на сервер маркетплейса. Мне и третьим лицам данные не уходят.</p>
+  </div>
+</section>
+
+<section class="block" aria-labelledby="more">
+  <h2 id="more">Что можно добавить</h2>
+  <div class="body">
+    <ul class="ideas">
+      <li>Прибыль по каждому товару с учётом комиссий, логистики и себестоимости.</li>
+      <li>Прогноз остатков и поставок FBO по кластерам.</li>
+      <li>Контроль автоакций маркетплейса.</li>
+      <li>Заявки «Хочу скидку»: одобрение или отказ по вашей минимальной цене.</li>
+      <li>Проверка карточек: контент-рейтинг, ошибки модерации, неверные габариты.</li>
+      <li>Сканирование кодов «Честного знака» при сборке.</li>
+      <li>Уведомления, когда падает рейтинг или растёт индекс ошибок FBS.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="block" aria-labelledby="price">
+  <h2 id="price">Стоимость</h2>
+  <div class="body">
+    <p>Цена зависит от того, что нужно вашему магазину. Напишите, я покажу расширение в деле и назову цену.</p>
+    <p class="actions"><a class="button" href="https://t.me/sss1737">Написать в Telegram</a></p>
+  </div>
+</section>
+
+<section class="block" aria-labelledby="contacts">
+  <h2 id="contacts">Контакты</h2>
+  <div class="body">
+    <p class="contact">Telegram: <a href="https://t.me/sss1737">@sss1737</a></p>
+    <p class="contact">Почта: <a href="mailto:chatikyan.arman@gmail.com">chatikyan.arman@gmail.com</a></p>
+  </div>
+</section>
+
+</main>
+</div>
+</body>
+</html>
