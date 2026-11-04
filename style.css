@@ -81,9 +81,13 @@ p {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 10px 24px;
-  padding: 20px 0;
+  gap: 0 24px;
+  padding: 10px 0;
   font-size: 0.9375rem;
+}
+
+.top .home, .top nav a {
+  padding-block: 10px;
 }
 
 .top .home {
@@ -280,6 +284,7 @@ section {
   padding: 0 var(--gutter) 10px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--gutter);
   list-style: none;
 }
 
