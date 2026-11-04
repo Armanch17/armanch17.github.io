@@ -376,18 +376,48 @@ section {
 }
 
 .steps {
+  list-style: none;
+  counter-reset: step;
   margin: 0;
-  padding: 0 0 0 1.4em;
+  padding: 0;
 }
 
 .steps li {
-  margin-bottom: 10px;
-  padding-left: 6px;
+  counter-increment: step;
+  position: relative;
+  margin-bottom: 20px;
+  padding: 2px 0 0 48px;
 }
 
-.steps li::marker {
+.steps li:last-child {
+  margin-bottom: 0;
+}
+
+.steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border: 1.5px solid var(--accent);
+  border-radius: 50%;
+  box-sizing: border-box;
   color: var(--accent);
-  font-weight: 800;
+  font-weight: 650;
+  font-size: 0.9375rem;
+  line-height: 27px;
+  text-align: center;
+}
+
+.steps li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 14.25px;
+  top: 36px;
+  bottom: -14px;
+  width: 1.5px;
+  background: var(--rule);
 }
 
 .feature strong {
@@ -398,7 +428,7 @@ section {
   margin: 24px 0 32px;
 }
 
-.shot img {
+.shot img, .shot video {
   display: block;
   width: 100%;
   height: auto;
