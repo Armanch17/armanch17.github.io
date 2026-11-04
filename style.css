@@ -416,10 +416,17 @@ section {
 .pair {
   display: grid;
   gap: 20px;
+  margin: 24px 0 32px;
 }
 
 .pair .shot {
   margin: 0;
+}
+
+.pair .shot + .shot img {
+  aspect-ratio: 8 / 9;
+  object-fit: cover;
+  object-position: top;
 }
 
 .ideas {
@@ -442,7 +449,7 @@ section {
   }
 
   .pair {
-    grid-template-columns: 0.84fr 0.71fr;
+    grid-template-columns: 2fr 1fr;
     align-items: start;
   }
 }
