@@ -30,10 +30,6 @@
   color-scheme: dark;
 }
 
-.infographics {
-  --accent: var(--amber);
-}
-
 *,
 *::before,
 *::after {
@@ -169,6 +165,10 @@ h2 {
   text-decoration: none;
 }
 
+.door:only-child {
+  grid-column: 1 / -1;
+}
+
 .door:hover {
   border-color: var(--accent);
 }
@@ -192,33 +192,6 @@ h2 {
   flex: 1;
   min-height: 210px;
   margin-top: 16px;
-}
-
-.door-cards .art img {
-  position: absolute;
-  bottom: -40px;
-  width: 38%;
-  max-width: 190px;
-  height: auto;
-  aspect-ratio: 3 / 4;
-  border-radius: 12px;
-  box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.8);
-}
-
-.door-cards .art img:nth-child(1) {
-  left: 4%;
-  transform: rotate(-6deg);
-}
-
-.door-cards .art img:nth-child(2) {
-  left: 31%;
-  bottom: -20px;
-  z-index: 2;
-}
-
-.door-cards .art img:nth-child(3) {
-  left: 58%;
-  transform: rotate(6deg);
 }
 
 .door-ext .art img {
