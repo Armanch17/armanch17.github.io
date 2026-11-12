@@ -402,11 +402,6 @@ section {
   margin: 24px auto 32px;
 }
 
-.shot > a {
-  display: block;
-  cursor: zoom-in;
-}
-
 .shot img, .shot video {
   display: block;
   width: 100%;
@@ -416,56 +411,10 @@ section {
   filter: brightness(0.92);
 }
 
-.shot > a > img {
-  margin-inline: auto;
-}
-
 .shot figcaption {
   margin-top: 10px;
   font-size: 0.9375rem;
   color: var(--muted);
-}
-
-.image-viewer {
-  max-width: 96vw;
-  max-height: 96vh;
-  padding: 0;
-  overflow: visible;
-  border: 0;
-  background: transparent;
-}
-
-.image-viewer::backdrop {
-  background: rgb(0 0 0 / 88%);
-}
-
-.image-viewer img {
-  display: block;
-  width: auto;
-  height: auto;
-  max-width: 94vw;
-  max-height: 92vh;
-  border: 1px solid var(--rule);
-  border-radius: 10px;
-  object-fit: contain;
-}
-
-.image-viewer-close {
-  position: fixed;
-  top: 18px;
-  right: 22px;
-  display: grid;
-  width: 44px;
-  height: 44px;
-  place-items: center;
-  border: 1px solid #fff8;
-  border-radius: 50%;
-  background: #171b19;
-  color: #fff;
-  font: inherit;
-  font-size: 30px;
-  line-height: 1;
-  cursor: pointer;
 }
 
 .ideas {
