@@ -401,6 +401,11 @@ section {
   margin: 24px 0 32px;
 }
 
+.shot > a {
+  display: block;
+  width: min(100%, 760px);
+}
+
 .shot img, .shot video {
   display: block;
   width: 100%;
@@ -408,6 +413,10 @@ section {
   border: 1px solid var(--rule);
   border-radius: 10px;
   filter: brightness(0.92);
+}
+
+.shot > a > img {
+  margin-inline: auto;
 }
 
 .shot figcaption {
