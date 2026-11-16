@@ -422,6 +422,7 @@ section {
 
 .feature strong {
   font-weight: 700;
+  color: var(--green);
 }
 
 .shot {
